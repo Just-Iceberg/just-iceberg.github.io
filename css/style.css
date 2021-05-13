@@ -1,0 +1,257 @@
+/*    Global Setting */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Teko', sans-serif;
+    background-color: rgb(241, 234, 221);
+    color: #565759;
+    font-size: 1.4em;
+    letter-spacing: 0.7px;
+    display: flex;
+    flex-direction: column;
+}
+
+li, a {
+    text-decoration: none;
+    list-style-type: none; 
+}
+
+      /*     Nav Section    */
+
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0px;
+}
+
+ul li {
+    background-color: white;
+    padding: 5px 5px;
+    margin: 5px auto;
+}
+
+a:link {
+    color:red;
+}
+
+ul {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+a:visited {
+    color: grey;
+}
+a:hover {
+    color: orange;
+    transition: 0.8s;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(223, 230, 185);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.header-image {
+    max-width: 220px;
+    margin: 20px auto;
+}
+
+.intro {
+    text-align: center;
+    margin: 10px auto;
+    width:80%;
+}
+
+.portfolio {
+    background-color:white;
+    text-align: center;
+    padding-bottom: 10px;
+} 
+
+.portfolio-heading {
+    margin: 50px auto;
+    font-size: 1.75rem;
+    padding-top: 35px;
+
+}
+
+.group-image {
+    display: block;
+    max-width: 80%;
+    margin:20px auto;
+}
+
+main p {
+    width: 70%;
+    margin: 15px auto;
+}
+
+.extra {
+    background-color: rgb(243, 204, 119);
+    padding-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2.experience-h {
+    text-align: center;
+    font-size: 1.75rem;
+    margin: 10px auto;
+}
+
+.experience {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin:5px auto;
+}
+
+.footer-contact {
+    display: block;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.contact {
+    margin: 50px auto;
+    font-size: 1.75rem;
+}
+.nav-list {
+    display: none;
+}
+
+.experience-1, .experience-2, .experience-3 {
+    flex-grow: 1;
+    margin: 5px 5px 20px;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    border-top:#a3a375 1px solid;
+    padding-top: 25px;
+    width: 90%;
+    margin:0 auto;
+}
+
+
+
+
+/*      MIN SCREEN SIZE 768px */
+
+
+
+@media (min-width:768px) {
+    .header {
+        flex-direction: row-reverse;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 50%;
+}
+
+ul li {
+    background-color:rgb(241, 234, 221);
+}
+
+li.nav {
+    background-color: violet;
+}
+h1.name {
+    font-size: 2rem;
+}
+
+.header-image {
+    max-width: 400px;
+    margin: 15px 15px;
+}
+
+.intro {
+    margin:15px 20px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.portfolio h3 {
+    margin-top: 15px;
+}
+.portfolio-heading {
+    flex-basis: 100%;
+}
+
+.portfolio-content {
+    max-width: 45%;
+    margin:15px auto;
+}
+.group-image {
+    max-width: 100%;
+    margin:0 auto;
+}
+
+.back {
+    display: none;
+}
+.nav-list{
+    display:flex;
+    max-width: 40%;
+    margin: 0px;
+}
+.bottom-nav {
+    padding-top: 5px;
+}
+h4.name {margin-top: 5px;}
+}
+
+
+
+/*      MIN SCREEN SIZE 1024px */
+
+@media (min-width:1024px) {
+.wrapper {
+    max-width:95%;
+    margin: 0 auto;
+    background-color: rgb(247, 197, 181);
+    }
+h1.name {
+    margin-left: 15px;
+}
+.header-image {
+    margin-right: 5%;
+    }
+.portfolio-content {
+    max-width: 28%;
+    margin:15px auto;
+    }
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    }
+ul.nav {
+     max-width: 40%;
+    }
+
+.extra {
+    padding:20px;
+    }   
+}
